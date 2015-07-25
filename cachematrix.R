@@ -34,7 +34,7 @@ cacheSolve <- function(x) {
         i <- x$getinverse()
         return(i)
     }
-    ##if inverse was not found from the cache, proceed to calculate and set in cache
+    ##if same matrix was not found from the cache, proceed to calculate and set in cache
     data <- x$get()
     #Calculating the inverse
     i <- solve(data)
